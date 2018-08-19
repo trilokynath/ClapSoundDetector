@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.trinfosoft.clapsounddetector.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llReminder"
+                style="@style/settings_item_layout">
+
+                <TextView
+                    android:id="@+id/tv_reminder_header"
+                    style="@style/settings_header"
+                    android:text="Clap To Find Phone"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="24sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:id="@+id/tv_reminder_label"
+                        style="@style/settings_sub_header"
+                        android:text="Turn ON/OFF detecting of clap" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/timerSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:checked="false"
+                        android:gravity="center_vertical"
+                        android:theme="@style/switch_theme" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_reminder_desc"
+                    style="@style/settings_details"
+                    android:paddingBottom="@dimen/items_inbetween_space"
+                    android:paddingTop="@dimen/items_top_padding"
+                    android:text="apply setting to turn on or off clap detection"
+                    android:textColor="@color/thumb_inactive" />
+
+            </LinearLayout>
+
+            <!-- view for class setting-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/textColorSecondary" />
+
+            <LinearLayout
+                android:id="@+id/set_class"
+                style="@style/settings_item_layout">
+
+                <LinearLayout
+                    android:id="@+id/ll_set_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_agree_header"
+                        style="@style/settings_header"
+                        android:paddingBottom="@dimen/items_inbetween_space"
+                        android:text="About App"
+                        android:textColor="@android:color/holo_orange_dark" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/items_inbetween_space">
+
+
+                        <TextView
+                            android:id="@+id/tv_reminder_time_label"
+                            style="@style/settings_sub_header"
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Lost your phone or put somewhere and you don’t remember??? Then this app is the best way to find it. Start Clapping then. It helps finding phone quickly. It detects sound of clapping and turns on the ringtone. It is the best tool if you sometimes forget to take your phone and you are searching it. With this app you only have to clap into your hands to find out where the mobile device is. It will start ringing."
+                            android:textAllCaps="false"
+                            android:typeface="normal" />
+
+                        <!--ImageView
+                            android:id="@+id/iv_timer"
+                            android:layout_width="@dimen/timer_icon"
+                            android:layout_height="@dimen/timer_icon"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/ic_launcher_round" android:contentDescription="@string/todo" /-->
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- view for subject setting-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/textColorSecondary" />
+
+            <!-- view for subject setting-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/textColorSecondary" />
+
+            <LinearLayout style="@style/settings_item_layout">
+
+                <LinearLayout
+                    android:id="@+id/ll_terms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/items_inbetween_space"
+                    android:paddingTop="@dimen/items_inbetween_space">
+
+                    <TextView
+                        style="@style/settings_sub_header"
+                        android:text="Design And Developed By Trilokynath Wagh" />
+
+                    <TextView
+                        android:id="@+id/tvResult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
